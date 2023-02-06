@@ -9,7 +9,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.ts,.astro,.cjs,.mjs",
     "lint:prettier": "prettier --check --ignore-path .gitignore './**/*.{astro,js,ts,cjs,mjs,json,css}'",
+    "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "prettier --write --ignore-path .gitignore './**/*.{astro,js,ts,cjs,mjs,json,css}'"
   },
   "dependencies": {
