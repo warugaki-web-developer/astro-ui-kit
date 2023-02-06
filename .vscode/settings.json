@@ -16,5 +16,12 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.validate": ["css", "scss", "astro"],
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src",
+    "/": "${folder}/src"
+  },
+  "path-autocomplete.extensionOnImport": true,
+  "path-autocomplete.triggerOutsideStrings": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.tsdk": "node_modules/typescript/lib"
 }

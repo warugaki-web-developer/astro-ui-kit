@@ -5,7 +5,8 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
-    "yusukehirao.vscode-markuplint"
+    "yusukehirao.vscode-markuplint",
+    "ionutvmi.path-autocomplete"
   ],
   "unwantedRecommendations": []
 }
