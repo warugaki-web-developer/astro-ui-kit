@@ -1,0 +1,67 @@
+---
+import IconFacebook from '../image/icons/Facebook.svg';
+import IconInstagram from '../image/icons/Instagram.svg';
+import IconTwitter from '../image/icons/Twitter.svg';
+import SiteLogo from '../image/logos/SiteLogo.svg';
+---
+
+<header class="base-header">
+  <div class="site-logo"><a href="/"><img src={SiteLogo} alt="" /></a></div>
+  <nav class="site-nav">
+    <ul class="nav-list">
+      <li class="listitem"><a href="#">Menu1</a></li>
+      <li class="listitem"><a href="#">Menu2</a></li>
+      <li class="listitem"><a href="#">Menu3</a></li>
+      <li class="listitem"><a href="#">Menu4</a></li>
+    </ul>
+  </nav>
+  <ul class="follow-us">
+    <li class="item">
+      <a href="#"><img src={IconFacebook} alt="" /></a>
+    </li>
+    <li class="item">
+      <a href="#"><img src={IconTwitter} alt="" /></a>
+    </li>
+    <li class="item">
+      <a href="#"><img src={IconInstagram} alt="" /></a>
+    </li>
+  </ul>
+</header>
+
+<style>
+  .base-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 28px 106px;
+  }
+
+  .site-logo {
+    width: 40px;
+  }
+
+  .site-nav {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .nav-list {
+    display: flex;
+    flex: 1;
+    gap: 40px;
+    justify-content: center;
+
+    > .listitem {
+      font-weight: 700;
+    }
+  }
+
+  .follow-us {
+    display: flex;
+    gap: 24px;
+
+    > .item {
+    }
+  }
+</style>
