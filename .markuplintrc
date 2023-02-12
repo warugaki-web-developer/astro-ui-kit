@@ -4,5 +4,40 @@
   ],
   "parser": {
     ".astro$": "@markuplint/astro-parser"
-  }
+  },
+  "rules": {
+    "class-naming": {
+      "value": [
+        "/^[a-z][a-zA-Z0-9]+$/",
+        "/^_([a-z][a-z0-9]*)(-[a-z0-9]+)*$/",
+        "/^-([a-z][a-z0-9]*)(-[a-z0-9]+)*$/"
+      ]
+    }
+  },
+  "nodeRules": [
+    {
+      "selector": "img",
+      "rules": {
+        "required-attr": [
+          "alt"
+        ]
+      }
+    }
+  ],
+  "childNodeRules": [
+    {
+      "regexSelector": {
+        "attrName": "class"
+      },
+      "rules": {
+        "class-naming": {
+          "value": [
+            "/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/",
+            "/^_([a-z][a-z0-9]*)(-[a-z0-9]+)*$/",
+            "/^-([a-z][a-z0-9]*)(-[a-z0-9]+)*$/"
+          ]
+        }
+      }
+    }
+  ]
 }
